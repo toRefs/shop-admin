@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import eslint from 'vite-plugin-eslint'
+import * as path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -14,5 +15,10 @@ export default defineConfig({
       // 默认值为：true
       cache: false
     })
-  ]
+  ],
+  resolve: {
+    alias: {
+      '@': path.join(__dirname, 'src')
+    }
+  }
 })
