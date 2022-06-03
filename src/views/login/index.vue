@@ -2,8 +2,9 @@
 </script>
 
 <template>
-  <router-view />
+  index
 </template>
 
-<style>
+<style scoped>
+
 </style>
