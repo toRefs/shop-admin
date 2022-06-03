@@ -14,13 +14,15 @@ const add = () => {
 
 <template>
   index
-  {{ count }}
+  <h1>{{ count }}</h1>
   {{ store.state.count }}
   <button @click="add">
     增加
   </button>
 </template>
 
-<style scoped>
-
+<style scoped lang="scss">
+h1 {
+  color: $red;
+}
 </style>
