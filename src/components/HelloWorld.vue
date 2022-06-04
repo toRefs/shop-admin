@@ -20,6 +20,12 @@ onMounted(() => {
 
 <template>
   <h1>{{ msg }}</h1>
+  <el-button type="warning">
+    dd
+  </el-button>
+  <el-button type="primary">
+    aa
+  </el-button>
 </template>
 
 <style scoped>
