@@ -19,5 +19,13 @@ module.exports = {
   rules: {
     'vue/no-multiple-template-root': 'off',
     'vue/multi-word-component-names': 0
-  }
+  },
+  overrides: [
+    {
+      files: ['src/api/**/*.ts'],
+      rules: {
+        camelcase: 'off'
+      }
+    }
+  ]
 }

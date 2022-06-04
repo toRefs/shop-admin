@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useStore } from 'vuex'
+import HelloWorld from '@/components/HelloWorld.vue'
 
 const store = useStore()
 
@@ -13,6 +14,7 @@ const add = () => {
 </script>
 
 <template>
+  <hello-world msg="hhhh" />
   index
   <h1>{{ count }}</h1>
   {{ store.state.count }}
