@@ -8,6 +8,7 @@ declare module '*.vue' {
 }
 
 /* eslint-disable no-unused-vars */
+// 增加 import.meta.env.XX 的提示
 interface ImportMetaEnv {
   readonly VITE_API_BASEURL: string
   // 更多环境变量...
